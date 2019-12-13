@@ -32,5 +32,16 @@
             color: #4285f4;
         }
     }
+
+    &.inverted {
+      background-color: black; 
+      color: white;
+      border-color: black;
+
+      &:hover {
+          background-color: white;
+          color: black;
+      }
+  }
   }
   

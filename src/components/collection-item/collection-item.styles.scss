@@ -2,15 +2,44 @@
     width: 22%;
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 420px;
     align-items: center;
+    position: relative;
   
     .image {
+      transition: all 0.3s;
       width: 100%;
       height: 95%;
       background-size: cover;
       background-position: center;
       margin-bottom: 5px;
+    }
+
+    .custom-button {
+      transition: all 0.3s;
+      position: absolute;
+      width: 80%;
+      top: 310px;
+      opacity: 0.8;
+      display: none;
+    }
+
+    &:hover {
+
+      .image {
+        transition: all 0.3s;
+        opacity: 0.8;
+      }
+
+      .custom-button {
+        display: block;
+
+        &:hover {
+          transition: all 0.3s;
+          opacity: 0.9;
+        }
+      }
+
     }
   
     .collection-footer {
