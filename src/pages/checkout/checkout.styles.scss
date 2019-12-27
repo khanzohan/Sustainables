@@ -22,6 +22,52 @@
         }
       }
     }
+
+
+    .payment-details {
+      transition: all .3s;
+      visibility: hidden;
+      background-color: white;
+      border: 1px solid lightgrey;
+      padding: 10px;
+      color: black;
+      position: absolute;
+      width: 340px;
+      font-family: 'Montserrat', sans-serif;
+      top: 0;
+      left: 0;
+      margin-top: -110px;
+      opacity: 0;
+    }
+
+    .fa-exclamation-circle {
+      margin: 0 15px;
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+
+        .payment-details {
+          transition: all .3s;
+          display: block;
+          opacity: 1;
+          visibility: visible;
+        }
+
+      }
+    }
+
+    .tooltip-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 2fr;
+      gap: 2%;
+      margin: 10px 0;
+      
+      & div:last-child {
+        text-align: right;
+      }
+    }
+
   
     .total {
       margin-top: 30px;
